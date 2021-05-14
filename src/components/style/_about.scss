@@ -1,0 +1,108 @@
+.full {
+  width: 100vw;
+  background: $lightpurple;
+  min-height: 100vh;
+  text-align: center;
+
+  .head {
+    width: 100vw;
+    min-height: 600px;
+    position: relative;
+    background: url(../../images/about.jpg) center center no-repeat;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+
+    .banner {
+      width: 100%;
+      max-width: 700px;
+      height: 600px;
+      position: absolute;
+      background: rgba(0, 0, 0, 0.562);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      * {
+        margin: 20px 0;
+        font-weight: 900;
+        font-family: "Open Sans", sans-serif;
+        color: white;
+      }
+    }
+  }
+
+  .contt {
+    width: 100vw;
+    min-height: 100vh;
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+    h1 {
+      margin: 20px;
+      font-family: "Poppins", sans-serif;
+      font-size: 70px;
+      font-weight: 900;
+    }
+    h2 {
+      margin: 0px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 200;
+    }
+
+    h3 {
+      font-size: 50px;
+      font-weight: 300;
+      font-family: "Poppins", sans-serif;
+      margin-bottom: 30px;
+    }
+
+    .para {
+      width: 90vw;
+      p {
+        line-height: 1.8;
+        font-family: "Poppins", sans-serif;
+        font-size: 14px;
+        text-indent: 30px;
+        padding: 50px 5px;
+      }
+    }
+
+    .lins {
+      width: 90vw;
+      min-height: 400px;
+      flex-direction: row;
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      margin: 20px 0;
+      flex-wrap: wrap;
+
+      .lin {
+        margin: 20px;
+        width: 400px;
+
+        h2 {
+          font-size: 30px;
+          color: $darkpurple;
+          margin-bottom: 20px;
+          font-weight: 500;
+        }
+        p {
+          line-height: 1.2;
+          font-size: 20px;
+          text-indent: 30px;
+        }
+      }
+    }
+  }
+}
+@media screen and(max-width:700px){
+  .full .contt h1{
+    font-size: 50px;
+  }
+}

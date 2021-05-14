@@ -1,0 +1,53 @@
+.registerPage {
+  width: 100vw;
+  min-height: 100vh;
+  background: url(../../images/reg.svg);
+  background-position: left top;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .c {
+    width: 500px;
+    max-width: 500px;
+    min-height: 600px;
+    box-shadow: 0px 10px 30px 0px white;
+    position: relative;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.226);
+
+    input {
+      margin: 7px 0;
+      outline: none;
+      border: 3px $lightpurple solid;
+      padding: 20px;
+      width: 400px;
+      max-width: 400px;
+      border-radius: 20px;
+      font-size: 18px;
+    }
+    
+    @media screen and (max-width: 600px) {
+      width: 90vw;
+      max-width: none;
+      position: relative;
+
+      input {
+        width: 90%;
+      }
+    }
+
+    h2 {
+      font-size: 30px;
+      font-weight: 700;
+      color: black;
+      margin: 20px;
+    }
+  }
+}

@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+$darkyellow: #ffc996;
+$lightred: #ff8474;
+$lightgreen: #91c788;
+$darkgreen: #52734d;
+$lightpurple: #9f5f80;
+$darkpurple: #583d72;
+
+@import "navbar";
+@import "home";
+@import "resize";
+@import "footer";
+@import "register";
+@import "profile";
+@import "fonduri";
+@import "about";
+@import 'anunturi';
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+
+  &::first-letter{
+    text-transform: capitalize;
+  }
+}
+
+html,
+body {
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  //   font-family: "Poppins", sans-serif;
+  // font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+.mainbutton {
+  padding: 20px;
+  background: white;
+  color: $lightred;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 600;
+  margin:  20px 17px;
+  cursor: pointer;
+  font-size: 20px;
+  border: $lightpurple 2px solid;
+  outline: none;
+}
+
+.hover {
+  transition: 0.5s ease-in-out;
+
+  &:hover {
+    transform: translateY(-10px);
+  }
+}
+
+.er404{
+  width:100vw;
+  height:100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  svg{
+    width: auto;
+    height: auto;
+  }
+}

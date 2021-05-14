@@ -1,0 +1,95 @@
+.anunturi {
+  width: 100vw;
+  min-height: 100vh;
+  .fform {
+    width: 100vw;
+    min-height: 100vh;
+    background: url(../../images/fin.svg) center top no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .ff {
+      width: 100%;
+      max-width: 600px;
+      min-height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      text-align: center;
+      position: relative;
+
+      h1 {
+        color: white;
+        font-size: 40px;
+        margin: 20px;
+        font-weight: 800;
+        font-family: "Poppins", sans-serif;
+      }
+
+      input,
+      textarea {
+        padding: 20px;
+        border-radius: 20px;
+        outline: none;
+        border: 2px solid $darkpurple;
+        margin: 20px;
+      }
+      textarea {
+        resize: both;
+      }
+    }
+  }
+
+  .an {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+
+    .post {
+      max-width: 500px;
+      margin: 40px;
+      min-height: 100px;
+      position: relative;
+      padding: 30px;
+      box-shadow: 0 0px 6px #00000047;
+      border-radius: 30px;
+      overflow: hidden;
+
+      .tp {
+        padding: 7px 0;
+        h2 {
+          margin: 5px 0;
+        }
+        h3 {
+          color: $lightred;
+          padding: 0 10px;
+        }
+      }
+      .ct {
+        text-indent: 20px;
+        line-height: 1.5;
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+      .m {
+        display: flex;
+
+
+        .buttonContact {
+          width: auto;
+          cursor: pointer;
+          margin: 20px 20px 20px 0;
+          padding: 15px 20px;
+          background: $darkpurple;
+          border-radius: 10px;
+
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

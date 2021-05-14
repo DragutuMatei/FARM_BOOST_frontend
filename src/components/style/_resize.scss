@@ -1,0 +1,21 @@
+@media screen and (max-width: 1050px) {
+  .firstPage {
+    .content {
+      flex-direction: column;
+      height: auto;
+      .txt {
+        width: 85vw;
+        margin: auto;
+        h1 {
+          font-size: 30px;
+          text-align: center;
+        }
+      }
+      .image {
+        // display: none;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}
